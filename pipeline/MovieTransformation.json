@@ -40,10 +40,8 @@
 								}
 							},
 							"MoviesSink": {
-								"Speccode": {
-									"value": "@pipeline().parameters.Speccode",
-									"type": "Expression"
-								}
+								"TableName": "moviesDB",
+								"SchemaName": "dbo"
 							},
 							"AllData": {
 								"Speccode": {
