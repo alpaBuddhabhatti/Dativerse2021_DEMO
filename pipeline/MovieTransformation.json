@@ -40,7 +40,10 @@
 								}
 							},
 							"MoviesSink": {
-								"TableName": "moviesDB",
+								"TableName": {
+									"value": "@split(pipeline().parameters.FileName,'.csv')[0]",
+									"type": "Expression"
+								},
 								"SchemaName": "dbo"
 							},
 							"AllData": {
