@@ -40,10 +40,11 @@
 								}
 							},
 							"MoviesSink": {
-								"Speccode": {
-									"value": "@pipeline().parameters.Speccode",
+								"TableName": {
+									"value": "@split(pipeline().parameters.FileName,'.csv')[0]",
 									"type": "Expression"
-								}
+								},
+								"SchemaName": "dbo"
 							},
 							"AllData": {
 								"Speccode": {
